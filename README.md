@@ -21,8 +21,6 @@ ___
 *  Navigate to the code button on the github website.\
 ![Code buton](/img/README/code.PNG)
 
-
-
 * Click on the code button to open the menu.\
 ![Github Repo Example](/img/README/HTTPS.PNG)
 
@@ -76,11 +74,17 @@ code .
 * This will open the directory in your default code editor and from there you can open the index.html from a live server by right clicking the file in the explorer.
 
 <p 
-  style="font-size: 12px; background-color: #8c8c8c; border-radius: 2px; padding: 1px 5px; text-align: center; color: white; margin-bottom: 24px"
+  style="
+    font-size: 12px; 
+    background-color: #8c8c8c; 
+    border-radius: 2px; 
+    padding: 1px 5px; 
+    text-align: center; 
+    color: white; 
+    margin-bottom: 24px"
 >
   <span style="font-weight: 700; color: purple">Live server</span> is an addonn for visual studio code. Make sure to download it if you choose to open this website using that method!
   <img src="img/README/liveserver.PNG">
-
 </p>
 The MIT License (MIT)
 

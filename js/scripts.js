@@ -31,8 +31,7 @@ const questionMapper = () => {
               <label class="form-check-label" for="radios4">Disagree Greatly</label>
             </div>
           </div>
-        </div>
-      `
+        </div>`
     })
   }
   return questionMap().join('')
@@ -67,7 +66,7 @@ $(document).ready(function() {
       $('#start-over-button').show()
     }
   })
-  $('#start-over-button').click(function(event){
-    location.reload(true);
+  $('#start-over-button').click(function(){
+    location.reload();
   })
 })
