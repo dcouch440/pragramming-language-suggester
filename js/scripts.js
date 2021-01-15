@@ -64,7 +64,6 @@ $(document).ready(function() {
       $('#html').show()
       $('#html-value').show()
     } else {
-      console.log('yo')
       $('#base-value').show()
     }
   })
