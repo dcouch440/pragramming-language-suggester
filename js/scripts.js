@@ -52,8 +52,10 @@ $(document).ready(function() {
     const input4_bottle = parseInt($("input:radio[name=radioButton-4]:checked").val());
     const input5_dog = parseInt($("input:radio[name=radioButton-5]:checked").val());
     const totalValue = input1_store + input2_hair + input3_micraphone + input4_bottle + input5_dog;
+    
     $('#greet-message').hide()
     $('#submit-button').hide()
+    
     if (totalValue > 15) {
       $('#ruby').show()
     } else if (totalValue > 7) {

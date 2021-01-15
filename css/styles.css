@@ -19,30 +19,39 @@ body {
 }
 /* sidebar */
 #questionnaire-container {
-  display: flex;
-  align-items: center;
-  width: 25%;
+  width: 50%;
   height: 100%;
 }
-.question-container {
-  background-color: #0b0b0beb;
+#questionnaire {
   display: flex;
   flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+.question-container {
+  max-height: 18vh;
+  background-color: #0b0b0beb;
   border: 1px solid rgb(0, 0, 0);
   border-radius: 15px;
-  margin: 15px;
   padding: 10px;
+  margin: 5px;
   box-shadow: 0px 1px 10px 0px #d5d5d582, inset -1px 1px 1px 2px #FFC107;
+  overflow: hidden;
+  padding: 20px;
+}
+input {
+  margin: 0px 10px;
 }
 .question-title {
   text-align: center;
   font-size: calc(12px + .2vh);
-  padding: 5px 7px;
 }
 .radio-button-cluster {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   padding: 5px;
-  font-size: calc(12px + .2vh);
+  font-size: calc(8px + .2vh);
+  overflow: hidden;
 }
 .radio-button-row {
   color: goldenrod;
@@ -51,10 +60,12 @@ body {
 }
 /* page content */
 #content-container {
+  position: initial;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding: 5% 15%;
 }
 #content-container-column {
   text-align: center;
@@ -79,10 +90,14 @@ body {
 #submit-button:focus {
   outline-style: none;
 }
-
-
-
 #ruby, #react, #html {
   display: none;
 }
-
+@media only screen and (max-width: 1100px) {
+  #questionnaire-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+}
