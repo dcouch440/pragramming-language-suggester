@@ -58,7 +58,7 @@ $(document).ready(function() {
     if (totalValue > 15) {
       $('#ruby').show()
       $('#start-over-button').show()
-    } else if (totalValue > 7) {
+    } else if (totalValue > 5) {
       $('#react').show()
       $('#start-over-button').show()
     } else {
