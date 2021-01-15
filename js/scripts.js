@@ -28,7 +28,7 @@ const questionMapper = () => {
             </div>
             <div class="radio-button-row">
               <input type="radio" name="radioButton-${iteration}" id="radios4" value="option1">
-              <label class="form-check-label" for="radios4">Disagre Greatly</label>
+              <label class="form-check-label" for="radios4">Disagree Greatly</label>
             </div>
           </div>
         </div>
@@ -44,4 +44,11 @@ const getRoot = () => {
 getRoot()
 
 $(document).ready(function() {
+  $("#submit-button").click(function(event) {
+    event.preventDefault()
+    const input1_store = $("input:radio[name=radioButton-1]:checked").val();
+    const input2_hair = $("input:radio[name=radioButton-2]:checked").val();
+    const input2_micraphone = $("input:radio[name=radioButton-3]:checked").val(); 
+    const input2_bottle = $("input:radio[name=radioButton-4]:checked").val();
+    const input2_dog = $("input:radio[name=radioButton-5]:checked").val();
 });
