@@ -15,19 +15,19 @@ const questionMapper = () => {
           <p class="question-title">${question}</p>
           <div class="radio-button-cluster">
             <div class="radio-button-row">
-              <input type="radio" name="radioButton-${iteration}" id="radios1" value="option1" checked>
+              <input type="radio" name="radioButton-${iteration}" id="radios1" value="1" checked>
               <label class="form-check-label" for="radios1">Agree Greatly</label>
             </div>
             <div class="radio-button-row">
-              <input type="radio" name="radioButton-${iteration}" id="radios2" value="option1">
+              <input type="radio" name="radioButton-${iteration}" id="radios2" value="2">
               <label class="form-check-label" for="radios2">Agree Kinda</label>
             </div>
             <div class="radio-button-row">
-              <input type="radio" name="radioButton-${iteration}" id="radios3" value="option1">
+              <input type="radio" name="radioButton-${iteration}" id="radios3" value="3">
               <label class="form-check-label" for="radios3">Disagree Kinda</label>
             </div>
             <div class="radio-button-row">
-              <input type="radio" name="radioButton-${iteration}" id="radios4" value="option1">
+              <input type="radio" name="radioButton-${iteration}" id="radios4" value="4">
               <label class="form-check-label" for="radios4">Disagree Greatly</label>
             </div>
           </div>
@@ -46,9 +46,12 @@ getRoot()
 $(document).ready(function() {
   $("#submit-button").click(function(event) {
     event.preventDefault()
-    const input1_store = $("input:radio[name=radioButton-1]:checked").val();
-    const input2_hair = $("input:radio[name=radioButton-2]:checked").val();
-    const input2_micraphone = $("input:radio[name=radioButton-3]:checked").val(); 
-    const input2_bottle = $("input:radio[name=radioButton-4]:checked").val();
-    const input2_dog = $("input:radio[name=radioButton-5]:checked").val();
-});
+    const input1_store = parseInt($("input:radio[name=radioButton-1]:checked").val());
+    const input2_hair = parseInt($("input:radio[name=radioButton-2]:checked").val());
+    const input3_micraphone = parseInt($("input:radio[name=radioButton-3]:checked").val()); 
+    const input4_bottle = parseInt($("input:radio[name=radioButton-4]:checked").val());
+    const input5_dog = parseInt($("input:radio[name=radioButton-5]:checked").val());
+    
+    const totalValue = input1_store + input2_hair + input3_micraphone + input5_dog;
+  })
+})
