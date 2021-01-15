@@ -58,10 +58,16 @@ $(document).ready(function() {
     
     if (totalValue > 15) {
       $('#ruby').show()
+      $('#start-over-button').show()
     } else if (totalValue > 7) {
       $('#react').show()
+      $('#start-over-button').show()
     } else {
       $('#html').show()
+      $('#start-over-button').show()
     }
+  })
+  $('#start-over-button').click(function(event){
+    location.reload(true);
   })
 })
