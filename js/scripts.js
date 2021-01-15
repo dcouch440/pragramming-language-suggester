@@ -54,16 +54,18 @@ $(document).ready(function() {
     
     $('#greet-message').hide()
     $('#submit-button').hide()
+    $('#start-over-button').show()
     
     if (totalValue > 15) {
       $('#ruby').show()
-      $('#start-over-button').show()
-    } else if (totalValue > 5) {
+    } else if (totalValue > 7) {
       $('#react').show()
-      $('#start-over-button').show()
-    } else {
+    } else if (totalValue > 5) {
       $('#html').show()
-      $('#start-over-button').show()
+      $('#html-value').show()
+    } else {
+      console.log('yo')
+      $('#base-value').show()
     }
   })
   $('#start-over-button').click(function(){

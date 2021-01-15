@@ -120,6 +120,12 @@ input {
 #ruby, #react, #html {
   display: none;
 }
+#base-value {
+  display: none;
+}
+#html-value {
+  display: none;
+}
 #reveal-content {
   display: flex;
   flex-direction: column;
@@ -150,5 +156,8 @@ input {
   }
   .question-container {
     padding: 12px;
+  }
+  #question-container {
+    box-shadow: 0px 1px 10px 0px #d5d5d582, inset 0px 1px 1px 2px #FFC107;
   }
 }
