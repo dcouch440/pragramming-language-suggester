@@ -62,3 +62,7 @@ body {
   border-radius: 20px;
 }
 
+#ruby, #react, #html {
+  display: none;
+}
+
