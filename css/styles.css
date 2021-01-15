@@ -4,13 +4,38 @@
 html, body {
   margin: 0;
   padding: 0;
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: rgb(196, 196, 196);
+}
+#questionnaire-container {
+  display: flex;
+  width: 15%;
+  align-items: center;
+  height: 100%;
+}
+.question-container {
+  background-color: #0b0b0beb;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 15px;
+  padding: 5px;
+  margin: 5px;
 }
 .question-title {
-  
+  text-align: center;
+  color: goldenrod;
+  font-family: monospace;
+  font-size: 1.4vh;
+  padding: 5px 7px;
 }
 .radio-button-cluster {
   display: inline-block;
-  border: 2px solid red;
+  padding: 5px;
+  font-size: 1.4vh;
 }
 .radio-button-row {
   color: goldenrod;

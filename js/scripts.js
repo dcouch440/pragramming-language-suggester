@@ -11,23 +11,25 @@ const questionMapper = () => {
     return questions.map(question => {
       iteration += 1
       return `
-        <p class="question-title">${question}</p>
-        <div class="radio-button-cluster">
-          <div class="radio-button-row">
-            <input type="radio" name="radioButton-${iteration}" id="radios1" value="option1" checked>
-            <label class="form-check-label" for="radios1">Agree Greatly</label>
-          </div>
-          <div class="radio-button-row">
-            <input type="radio" name="radioButton-${iteration}" id="radios2" value="option1">
-            <label class="form-check-label" for="radios2">Agree Greatly</label>
-          </div>
-          <div class="radio-button-row">
-            <input type="radio" name="radioButton-${iteration}" id="radios3" value="option1">
-            <label class="form-check-label" for="radios3">Agree Greatly</label>
-          </div>
-          <div class="radio-button-row">
-            <input type="radio" name="radioButton-${iteration}" id="radios4" value="option1">
-            <label class="form-check-label" for="radios4">Agree Greatly</label>
+        <div class="question-container">
+          <p class="question-title">${question}</p>
+          <div class="radio-button-cluster">
+            <div class="radio-button-row">
+              <input type="radio" name="radioButton-${iteration}" id="radios1" value="option1" checked>
+              <label class="form-check-label" for="radios1">Agree Greatly</label>
+            </div>
+            <div class="radio-button-row">
+              <input type="radio" name="radioButton-${iteration}" id="radios2" value="option1">
+              <label class="form-check-label" for="radios2">Agree Kinda</label>
+            </div>
+            <div class="radio-button-row">
+              <input type="radio" name="radioButton-${iteration}" id="radios3" value="option1">
+              <label class="form-check-label" for="radios3">Disagree Kinda</label>
+            </div>
+            <div class="radio-button-row">
+              <input type="radio" name="radioButton-${iteration}" id="radios4" value="option1">
+              <label class="form-check-label" for="radios4">Disagre Greatly</label>
+            </div>
           </div>
         </div>
       `
@@ -35,6 +37,11 @@ const questionMapper = () => {
   }
   return questionMap().join('')
 }
+const getRoot = () => {
+  const rootId = document.getElementById('questionnaire')
+  rootId.innerHTML = questionMapper()
+}
+getRoot()
 
 $(document).ready(function() {
 });
