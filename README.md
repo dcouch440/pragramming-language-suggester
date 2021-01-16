@@ -86,6 +86,7 @@ code .
   <span style="font-weight: 700; color: purple">Live server</span> is an addonn for visual studio code. Make sure to download it if you choose to open this website using that method!
   <img src="img/README/liveserver.PNG">
 </p>
+
 The MIT License (MIT)
 
 Copyright (c) 2021 David Couch
