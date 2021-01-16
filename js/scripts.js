@@ -62,7 +62,6 @@ $(document).ready(function() {
       $('#react').show()
     } else if (totalValue > 5) {
       $('#html').show()
-      $('#html-value').show()
     } else {
       $('#base-value').show()
     }

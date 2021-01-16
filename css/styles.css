@@ -123,9 +123,6 @@ input {
 #base-value {
   display: none;
 }
-#html-value {
-  display: none;
-}
 #reveal-content {
   display: flex;
   flex-direction: column;
