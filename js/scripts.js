@@ -13,7 +13,7 @@ const questionMapper = () => {
       return `
         <div class="question-container">
           <p class="question-title">${question}</p>
-          <div class="radio-button-cluster">
+          <form class="radio-button-cluster">
             <div class="radio-button-row">
               <input type="radio" name="radioButton-${iteration}" id="radios1" value="1" checked>
               <label class="form-check-label" for="radios1">Agree Greatly</label>
@@ -30,7 +30,7 @@ const questionMapper = () => {
               <input type="radio" name="radioButton-${iteration}" id="radios4" value="4">
               <label class="form-check-label" for="radios4">Disagree Greatly</label>
             </div>
-          </div>
+          </form>
         </div>`
     })
   }
