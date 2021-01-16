@@ -15,19 +15,19 @@ const questionMapper = () => {
           <p class="question-title">${question}</p>
           <form class="radio-button-cluster">
             <div class="radio-button-row">
-              <input type="radio" name="radioButton-${iteration}" id="radios1" value="1" checked>
+              <input type="radio" name="radioButton-${iteration}" value="1" checked>
               <label class="form-check-label" for="radios1">Agree Greatly</label>
             </div>
             <div class="radio-button-row">
-              <input type="radio" name="radioButton-${iteration}" id="radios2" value="2">
+              <input type="radio" name="radioButton-${iteration}" value="2">
               <label class="form-check-label" for="radios2">Agree Kinda</label>
             </div>
             <div class="radio-button-row">
-              <input type="radio" name="radioButton-${iteration}" id="radios3" value="3">
+              <input type="radio" name="radioButton-${iteration}" value="3">
               <label class="form-check-label" for="radios3">Disagree Kinda</label>
             </div>
             <div class="radio-button-row">
-              <input type="radio" name="radioButton-${iteration}" id="radios4" value="4">
+              <input type="radio" name="radioButton-${iteration}" value="4">
               <label class="form-check-label" for="radios4">Disagree Greatly</label>
             </div>
           </form>
