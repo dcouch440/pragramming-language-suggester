@@ -71,7 +71,7 @@ git clone https://github.com/dcouch440/pragramming-language-suggester.git
 ``` bash
 code .
 ```
-* This will open the directory in your default code editor and from there you can open the index.html from a live server by right clicking the file in the explorer.
+* This will open the directory in your default code editor and from there you can open the index.html file from a live server by right clicking the file in the explorer.
 
 <p 
   style="
