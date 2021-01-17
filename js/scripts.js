@@ -1,8 +1,9 @@
-import * as utils from './questionnaire.js'
+import { questionnare } from './Components/questionnare.js'
+import * as utils from './utils.js'
 
 const getRoot = () => {
   const rootId = document.getElementById('questionnaire')
-  rootId.innerHTML = utils.questionMapper()
+  rootId.innerHTML = questionnare(utils.getQuestions())
 }
 getRoot()
 
