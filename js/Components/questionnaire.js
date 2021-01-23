@@ -1,4 +1,4 @@
-export const questionnare = (data) => {
+export const questionnaire = (data) => {
   const radioButton = (label, index, value) => {
     const isFirst = value === 1 ? 'checked' : null
     return `

@@ -73,9 +73,6 @@ input {
   width: 50%;
   height: 50%;
 }
-#content-container-column {
-  text-align: center;
-}
 #submit-button {
   padding: 20px;
   margin-top: 5%;
@@ -84,14 +81,18 @@ input {
   color: goldenrod;
   background-color: black;
 }
+#content-container-column {
+  text-align: center;
+}
 #submit-button:hover {
   cursor: pointer;
-  background-color: rgb(255 255 255 / 10%);
-  transition: .4s;
+  background-color: rgba(255, 255, 255, 0.075);
+  transition: .3s;
   box-shadow: 0 0 7px white;
 }
 #submit-button:active {
-  box-shadow: 0 0 0 3px white;
+  box-shadow: 0 0 0 3px rgb(255, 255, 255);
+  transition: .3s;
 }
 #submit-button:focus {
   outline-style: none;
@@ -107,12 +108,13 @@ input {
 }
 #start-over-button:hover {
   cursor: pointer;
-  background-color: rgb(255 255 255 / 10%);
-  transition: .4s;
+  background-color: rgba(255, 255, 255, 0.075);
+  transition: .3s;
   box-shadow: 0 0 7px white;
 }
 #start-over-button:active {
-  box-shadow: 0 0 0 3px white;
+  box-shadow: 0 0 0 3px rgb(255, 255, 255);
+  transition: .3s;
 }
 #start-over-button:focus {
   outline-style: none;

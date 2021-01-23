@@ -7,19 +7,21 @@
 ### Description
 
 
-#### This project is an example of using string interpolation to map through an array of strings and attach input values to such string. Additionaly this project holds return values from inputs that are used to conditionally determine which value satisfies the equation.
+#### This project is an example of using string interpolation to map through an array of strings and attach input values to such string. Additionally this project holds return values from inputs that are used to conditionally determine which value satisfies the equation.
 
 ### Technology Used:
 - HTML
 - CSS
 - JAVASCRIPT
-___
+***
+### Want to see this webpage now?
+###### See this web page in action on [Github Pages](https://dcouch440.github.io/pragramming-language-suggester/)
 
 ## Installation :
 * Go to ( https://github.com/dcouch440/pragramming-language-suggester.git ).
 
 *  Navigate to the code button on the github website.\
-![Code buton](/img/README/code.PNG)
+![Code button](/img/README/code.PNG)
 
 * Click on the code button to open the menu.\
 ![Github Repo Example](/img/README/HTTPS.PNG)
@@ -65,13 +67,13 @@ git clone https://github.com/dcouch440/pragramming-language-suggester.git
   If you have any problems make sure your HTTPS code is correct! The example above might not be the most recent HTTPS code!
 </div>
 
-
-* Then after the proccess is completed use the command.
+* Then after the process is completed use the command.
 
 ``` bash
 code .
 ```
-* This will open the directory in your default code editor and from there you can open the index.html file from a live server by right clicking the file in the explorer.
+
+* This will open the directory in your default code editor and from there it is required that you open the index.html file from live server or your code editors counterpart. You <strong>must</strong> use this method. Opening this web app from the index.html file alone will cause it to not function correctly!
 
 <p 
   style="
@@ -83,9 +85,11 @@ code .
     color: white; 
     margin-bottom: 24px"
 >
-  <span style="font-weight: 700; color: purple">Live server</span> is an addonn for visual studio code. Make sure to download it if you choose to open this website using that method!
+  <span style="font-weight: 700; color: purple">Live server</span>
   <img src="img/README/liveserver.PNG">
 </p>
+
+***
 
 The MIT License (MIT)
 
