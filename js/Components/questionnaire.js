@@ -8,15 +8,15 @@ export const questionnaire = (data) => {
       </div>`
   }
   const questionMap = () => {
-    return data.questions.map((question, questionsindex) => {
-      questionsindex += 1
+    return data.questions.map((question, questionsIndex) => {
+      questionsIndex += 1
       return `
         <div class="question-container">
           <p class="question-title">${question}</p>
           <form class="radio-button-cluster">
             ${
               data.inputs.map(
-                (input, value) => radioButton(input, questionsindex, value + 1)
+                (input, value) => radioButton(input, questionsIndex, value + 1)
               ).join("")
             }
           </form>

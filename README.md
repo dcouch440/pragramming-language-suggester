@@ -73,7 +73,7 @@ git clone https://github.com/dcouch440/pragramming-language-suggester.git
 code .
 ```
 
-* This will open the directory in your default code editor and from there it is required that you open the index.html file from live server or your code editors counterpart. You <strong>must</strong> use this method. Opening this web app from the index.html file alone will cause it to not function correctly!
+* This will open the directory in your default code editor and from there it is required that you open the index.html file from live server (Visual Studio Code) or your code editors counterpart. You <strong>must</strong> use this method. Opening this web app from the index.html file alone will cause it to not function correctly!
 
 <p 
   style="
